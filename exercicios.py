@@ -1,4 +1,4 @@
-# #### Inteiros (`int`)
+#### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 numero_1 = int(input('Insira um número inteiro: '))
@@ -33,7 +33,7 @@ resultado = numero ** 2
 print(f'Quadrado do número inteiro: {resultado}')
 print()
 
-# #### Números de Ponto Flutuante (`float`)
+#### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
 numero_1 = float(input('Insira um número flutuante: '))
@@ -59,27 +59,59 @@ print()
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 temperatura_celsius = float(input('Insira a temperatura, em Celsius: '))
 temperatura_fahrenheit = (temperatura_celsius * (9/5)) + 32
-print(f'{temperatura_celsius}°C = {temperatura_fahrenheit}°F')
+print(f'{temperatura_celsius}°C = {temperatura_fahrenheit:.2f}°F')
 print()
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 import math
 raio = float(input('Insira o raio do círculo: '))
 area = math.pi * raio**2
-print(f'Área do círculo, de raio {raio}: {area}')
+print(f'Área do círculo, de raio {raio}: {area:.2f}')
 print()
 
-# #### Strings (`str`)
+#### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+string = str(input('Insira uma string: '))
+string_maiuscula  = string.upper()
+print(f'String maiúscula: {string_maiuscula}')
+print()
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+nome = str(input('Insira seu nome completo: '))
+nome_maiusculo  = nome.upper()
+print(f'Nome maiúsculo: {nome_maiusculo}')
+print()
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+frase = str(input('Insira uma frase: '))
+frase_sem_espaco  = frase.strip()
+print(f'Frase formatada: {frase_sem_espaco}')
+print()
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+data = str(input('Insira uma data (formato "dd/mm/aaaa"): '))
+data = data.split('/')
+dia = data[0]
+mes = data[1]
+ano = data[2]
+print(f'Dia: {dia}')
+print(f'Mês: {mes}')
+print(f'Ano: {ano}')
+print()
+
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+string_1 = str(input('Insira uma string: '))
+string_2 = str(input('Insira outra string: '))
+string_concatenada  = string_1 + string_2
+print(f'String concatenada: {string_concatenada}')
+print()
+
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
